@@ -1,1 +1,1 @@
-<p>Fuego operación quasar</p>
+<H2 style="color:red;">Fuego operación quasar</H2>
