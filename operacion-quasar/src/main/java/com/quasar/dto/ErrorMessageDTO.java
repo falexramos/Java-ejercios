@@ -7,7 +7,13 @@ import lombok.Setter;
 
 @Setter
 @Getter
-
+/**
+ * Objeto que se devuelve con el mensaje de error a la petición cuando esta
+ * falla.
+ * 
+ * @author Favian Ramos
+ *
+ */
 public class ErrorMessageDTO implements Serializable {
 	/**
 	 * 

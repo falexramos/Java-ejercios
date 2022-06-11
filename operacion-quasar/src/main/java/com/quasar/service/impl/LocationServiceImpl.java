@@ -14,7 +14,11 @@ import com.quasar.dto.SateliteSplitDto;
 import com.quasar.entity.Satelite;
 import com.quasar.repository.InterfaceLocationRepository;
 import com.quasar.service.LocationService;
-
+/**
+ * Clase que realiza la implementación, en donde se obtine la posicion y se descifra el mensaje 
+ * @author Favian Ramos
+ *
+ */
 @Service
 public class LocationServiceImpl implements LocationService {
 
@@ -40,8 +44,8 @@ public class LocationServiceImpl implements LocationService {
 	}
 
 	@Override
-	public RespuestaDto getLocationSplit(SateliteSplitDto sateliteSplitDto, String sateliteName) {
-		List<Satelite> satelite = l.findByName(sateliteName);
+	public RespuestaDto getLocationSplit(SateliteSplitDto sateliteSplitDto) {
+		List<Satelite> satelite = l.findAll();
 		RespuestaDto respuestaDto = new RespuestaDto();
 		respuestaDto.setMensaje(mensageServiceImpl.descifrarMensaje(sateliteSplitDto));
 		respuestaDto.setPosition(positionServiceImpl.satelitePosicion(satelite,sateliteSplitDto));

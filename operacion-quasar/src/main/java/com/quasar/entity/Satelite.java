@@ -11,11 +11,18 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+
 @Entity
 @Table(name="satelite")
 @Setter
 @Getter
 @ToString
+
+/**
+ * Objeto que contine los datos de las posiciones de los satelistes X y Y
+ * @author Favian Ramos
+ *
+ */
 public class Satelite {
 	@Id
 	@Column(name="nombre")

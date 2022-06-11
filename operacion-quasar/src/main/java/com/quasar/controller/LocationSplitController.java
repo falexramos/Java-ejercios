@@ -15,30 +15,52 @@ import com.quasar.dto.RespuestaDto;
 import com.quasar.dto.SateliteSplitDto;
 import com.quasar.service.LocationService;
 
-
+/**
+ * Controlador de las Apis de la operacion quasarsplit
+ * 
+ * @author Favian Ramos
+ *
+ */
 @RestController
 @RequestMapping("/topsecret_split")
 public class LocationSplitController {
-	private static Logger logger=LoggerFactory.getLogger(LocationController.class);
-	
+	private static Logger logger = LoggerFactory.getLogger(LocationController.class);
+
 	@Autowired
 	private LocationService locationService;
-	
-	@CrossOrigin(origins =  "*")
-	@GetMapping(value="/{sateliteName}")
-	public RespuestaDto getLocationNameGet(@PathVariable("sateliteName") String  sateliteName,@RequestBody SateliteSplitDto sateliteSplitDto){
-		
-		return locationService.getLocationSplit(sateliteSplitDto,sateliteName);
-		
+
+	/**
+	 * Api rest de tipo Get /topsecret_split para validar la posición y descifrar el
+	 * mensaje con un solo satelite.
+	 * 
+	 * @param sateliteName     nombre del satelite.
+	 * @param sateliteSplitDto Listado de mensajes a descifrar y la distancia.
+	 * @return Retorna un Objeto con la Posicion X y Y de los satelites y el mensaje descifrado.
+	 */
+	@CrossOrigin(origins = "*")
+	@GetMapping(value = "/{sateliteName}")
+	public RespuestaDto getLocationNameGet(@PathVariable("sateliteName") String sateliteName,
+			@RequestBody SateliteSplitDto sateliteSplitDto) {
+
+		return locationService.getLocationSplit(sateliteSplitDto);
+
 	}
-	
-	@CrossOrigin(origins =  "*")
-	@PostMapping(value="/{sateliteName}")
-	public RespuestaDto getLocationNamePost(@PathVariable("sateliteName") String  sateliteName,
-									  @RequestBody SateliteSplitDto sateliteSplitDto	){
-		
-		return locationService.getLocationSplit(sateliteSplitDto,sateliteName);
-		
+
+	/**
+	 * Api rest de tipo Post /topsecret_split para validar la posición y descifrar el
+	 * mensaje con un solo satelite.
+	 * 
+	 * @param sateliteName     nombre del satelite.
+	 * @param sateliteSplitDto Listado de mensajes a descifrar y la distancia.
+	 * @return Retorna un Objeto con la Posicion X y Y de los satelites y el mensaje descifrado.
+	 */
+	@CrossOrigin(origins = "*")
+	@PostMapping(value = "/{sateliteName}")
+	public RespuestaDto getLocationNamePost(@PathVariable("sateliteName") String sateliteName,
+			@RequestBody SateliteSplitDto sateliteSplitDto) {
+
+		return locationService.getLocationSplit(sateliteSplitDto);
+
 	}
-	
+
 }

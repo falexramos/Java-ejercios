@@ -13,7 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.quasar.dto.RespuestaDto;
 import com.quasar.dto.SateliteDto;
 import com.quasar.service.LocationService;
-
+/**
+ * Controlador de las Apis de la operacion quasar.
+ * @author Favian Ramos.
+ *
+ */
 @RestController
 @RequestMapping("/topsecret")
 public class LocationController {
@@ -23,6 +27,11 @@ public class LocationController {
 	@Autowired
 	private LocationService locationService;
 	
+	/**
+	 * Api rest de tipo Post /topsecret para validar la posición y descifrar el mensaje.
+	 * @param sateliteDto objeto de tipo sateliteDto, un array de satelites con la distancia a obtener y el mensaje a descifrar.
+	 * @return Retorna un Objeto con la Posicion X y Y de los satelites y el mensaje descifrado.
+	 */
 	@CrossOrigin(origins =  "*")
 	@PostMapping
 	public RespuestaDto getLocation(@RequestBody SateliteDto sateliteDto) {		
