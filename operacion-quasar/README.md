@@ -14,5 +14,5 @@
 <a>Para el nivel 1:</a>
 <p>// input: distancia al emisor tal cual se recibe en cada satélite
 // output: las coordenadas ‘x’ e ‘y’ del emisor del mensaje</p> <br>
-<a>Se utilizo la función TrilaterationFunction de java de la libraría lemmingapex </a><br>
+<a>Se utilizo la función TrilaterationFunction de java de la librería lemmingapex </a><br>
 <a>Se hace despliegue en heroku</a>
