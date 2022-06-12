@@ -5,8 +5,6 @@ import java.io.Serializable;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
-@Getter
 /**
  * Objeto que se devuelve con el mensaje de error a la petición cuando esta
  * falla.
@@ -14,6 +12,9 @@ import lombok.Setter;
  * @author Favian Ramos
  *
  */
+@Setter
+@Getter
+
 public class ErrorMessageDTO implements Serializable {
 	/**
 	 * 
