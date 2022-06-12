@@ -10,6 +10,9 @@
  3. El ide utilizado es el sts-4.6.2.RELEASE <br>
  4. Se utilizo lombok. <br>
  
+ <H2>Documentación</h2>
+ <p>La documentación del proyecto se realizo con Java-Doc, la cual se encuentra en la carpeta Doc del proyecto.</p>
+ 
  <H2>Consideraciones</h2>
 <a>Para el nivel 1:</a>
 <p>// input: distancia al emisor tal cual se recibe en cada satélite
