@@ -7,8 +7,9 @@
  <H2>Datos del Proyecto</h2>
  1. Versión de java utilizada 1.8 <br>
  2. El proyecto se realizado con springBoot <br>
- 3. El ide utilizado es el sts-4.6.2.RELEASE <br>
- 4. Se utilizo lombok. <br>
+ 3. Maven
+ 4. El ide utilizado es el sts-4.6.2.RELEASE <br>
+ 5. Se utilizo lombok. <br>
  
  <H2>Documentación</h2>
  <p>La documentación del proyecto se realizo con Java-Doc, la cual se encuentra en la carpeta Doc del proyecto.</p>
@@ -18,4 +19,4 @@
 <p>// input: distancia al emisor tal cual se recibe en cada satélite
 // output: las coordenadas ‘x’ e ‘y’ del emisor del mensaje</p> <br>
 <a>Se utilizo la función TrilaterationFunction de java de la librería lemmingapex </a><br>
-<a>Se hace despliegue en heroku</a>
+
