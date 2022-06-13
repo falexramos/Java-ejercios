@@ -20,3 +20,5 @@
 // output: las coordenadas ‘x’ e ‘y’ del emisor del mensaje</p> <br>
 <a>Se utilizo la función TrilaterationFunction de java de la librería lemmingapex </a><br>
 
+
+Desplegado en Heroku : https://operacion-quasar-favian.herokuapp.com/
